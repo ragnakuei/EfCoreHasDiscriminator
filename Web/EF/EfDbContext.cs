@@ -10,10 +10,9 @@ namespace EfCoreInheritance.EF
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Person>().ToTable("Person");
-
             modelBuilder.Entity<Person>()
-                        .HasDiscriminator<int>("Type")
+                        .ToTable(nameof(Person))
+                        .HasDiscriminator<int>(nameof(Person.Type))
                         .HasValue<Student>(1)
                         .HasValue<Instructor>(2);
         }

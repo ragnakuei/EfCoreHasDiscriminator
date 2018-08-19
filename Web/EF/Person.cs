@@ -19,17 +19,17 @@ namespace EfCoreInheritance.EF
         public int Age { get; set; }
     }
 
-    [NotMapped]
     public class Student : Person
     {
         [MaxLength(50)]
+        [Column("Email")]
         public string PersonalEmail { get; set; }
     }
 
-    [NotMapped]
     public class Instructor : Person
     {
         [MaxLength(50)]
+        [Column("Email")]
         public string BusinessEmail { get; set; }
     }
 }
