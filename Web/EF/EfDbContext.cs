@@ -17,8 +17,6 @@ namespace EfCoreInheritance.EF
                         .HasValue<Instructor>(2);
         }
 
-        public DbSet<Person> People { get; set; }
-
         public DbSet<Student> Students { get; set; }
 
         public DbSet<Instructor> Instructors { get; set; }
