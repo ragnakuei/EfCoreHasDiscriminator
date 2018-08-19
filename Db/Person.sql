@@ -4,7 +4,8 @@
 	[FirstName] [nvarchar](50) NOT NULL,
 	[LastName] [nvarchar](50) NOT NULL,
 	[Age] [int] NOT NULL,
-	[Email] [nvarchar](50) NOT NULL,
+	[BusinessEmail] [nvarchar](50) NULL,
+	[PersonalEmail] [nvarchar](50) NULL,
  CONSTRAINT [PK_Person] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
